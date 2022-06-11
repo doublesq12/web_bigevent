@@ -14,11 +14,11 @@ $(function () {
     // 校验两次密码是否一致的规则
     repwd: (value) => {
       const pwd = $(".reg-box [name=password]").val();
-      // console.log(pwd,value);
+      console.log(pwd,value);
         if(pwd !== value) return "两次密码不一致"
     },
   });
-  // const baseUrl="http://www.liulongbin.top:3007"
+  const baseUrl="http://www.liulongbin.top:3007"
   $('#form_reg').submit((e) => {
     e.preventDefault();
     $.ajax({
