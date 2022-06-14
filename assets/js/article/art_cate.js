@@ -52,6 +52,7 @@ $(function () {
       method: 'GET',
       url: '/my/article/cates/' + id,
       success: function (res) {
+        console.log(res);
         if (res.status !== 0) return layer.msg('获取文章分类信息失败')
         form.val('form-edit', res.data)
       },
